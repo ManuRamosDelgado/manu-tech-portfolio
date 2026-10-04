@@ -351,11 +351,13 @@
 
 <script>
 window.PORTFOLIO_ASSISTANT_CONFIG={
-  endpoint:"http://127.0.0.1:8790/v1/chat",
-  contactEndpoint:"http://127.0.0.1:8790/v1/contact",
+  endpoint:"https://assistant.141.94.31.83.sslip.io/v1/chat",
+  contactEndpoint:"https://assistant.141.94.31.83.sslip.io/v1/contact",
+  healthEndpoint:"https://assistant.141.94.31.83.sslip.io/health",
   publicEmail:"manuramosdelgado@gmail.com",
   publicPhone:"646728430",
-  enabled:["127.0.0.1","localhost"].includes(location.hostname)
+  enabled:true,
+  requireReady:true
 };
 </script>
 <script src="assistant-widget.js"></script>
