@@ -205,19 +205,6 @@ function appendAssistant(payload){
   article.appendChild(body);
   messagesEl.appendChild(article);
 
-  if(Array.isArray(payload.suggestions)&&payload.suggestions.length){
-    const wrap=document.createElement("div");
-    wrap.className="suggestion-prompts";
-    payload.suggestions.forEach(text=>{
-      const button=document.createElement("button");
-      button.type="button";
-      button.textContent=text;
-      button.addEventListener("click",()=>submit(text));
-      wrap.appendChild(button);
-    });
-    messagesEl.appendChild(wrap);
-  }
-
   if(payload.contact_offer)appendContactOffer();
   scrollBottom();
 }

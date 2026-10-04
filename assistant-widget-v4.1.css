@@ -1,0 +1,32 @@
+/* V4.1 — assistant visibility */
+.assistant-launcher{
+  right:22px;bottom:22px;
+  min-width:220px;min-height:58px;
+  padding:10px 14px 10px 13px;
+  border-radius:18px;
+  justify-content:flex-start;
+  gap:10px;
+  background:rgba(250,249,245,.97);
+  border:1px solid #b9b7af;
+  box-shadow:0 18px 54px rgba(31,35,32,.16);
+}
+.assistant-launcher:hover{transform:translateY(-2px);box-shadow:0 24px 62px rgba(31,35,32,.19);border-color:#969b97}
+.assistant-launcher-dot{width:9px;height:9px;flex:none}
+.assistant-launcher-copy{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15;min-width:0;flex:1}
+.assistant-launcher-copy b{font-size:11px;letter-spacing:-.01em}
+.assistant-launcher-copy small{display:block;margin-top:3px;font-size:8px;color:#818782;font-weight:600}
+.assistant-launcher-arrow{font-size:14px;color:#66746e}
+.assistant-panel{bottom:92px}
+.assistant-header h2{font-size:22px}
+.assistant-header p{font-size:10px;max-width:330px}
+.welcome-message .message-body{background:#f3f1eb}
+@media(max-width:600px){
+  .assistant-launcher{
+    right:12px;bottom:12px;
+    width:auto;min-width:188px;height:auto;min-height:54px;
+    padding:9px 12px;border-radius:17px;
+  }
+  .assistant-launcher span:last-child{display:block}
+  .assistant-launcher-copy{display:flex!important}
+  .assistant-panel{bottom:78px}
+}
