@@ -1,9 +1,48 @@
-[Reading 5 lines from start (total: 5 lines, 0 remaining)]
-
-[Reading 1 lines from start (total: 1 lines, 0 remaining)]
-
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SmartCompra &#8212; Caso de estudio</title><link rel="stylesheet" href="styles-v4.css"><link rel="stylesheet" href="styles-v4.1.css"><link rel="stylesheet" href="subpage-v4.css"></head><body><nav><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Caso de estudio</small></span></a><div class="nav-links"><a href="index.html#trabajo">Proyectos</a><a href="dashboard.html">Dashboard</a></div></div></nav><main><section class="wrap page-hero"><div class="eyebrow">Flagship retail &#183; Commerce AI</div><h1>SmartCompra</h1><p style="max-width:820px;color:var(--soft);font-size:18px">Asistente inteligente de compras que convierte un problema de retail &#8212; entender productos, precios y cestas &#8212; en una arquitectura separada entre clientes, l&#243;gica central y fuentes de datos.</p><span class="pill green">GREEN + LIVE</span></section><section><div class="wrap"><div class="case-grid"><div class="card case-card wide"><div class="eyebrow">Problema</div><h3>Comprar bien exige entender intenci&#243;n y equivalencias</h3><p>Una lista humana no viene normalizada: &#8220;yogur natural&#8221; puede implicar sin sabor expl&#237;cito, los formatos cambian y los precios no son comparables si el producto no se entiende correctamente.</p></div><div class="card case-card "><div class="eyebrow">Decisi&#243;n</div><h3>Core independiente de la interfaz</h3><p>Telegram no deb&#237;a convertirse en el producto. Se separ&#243; SmartCompra Core de los clientes para que Web/PWA y futuros canales reutilicen la misma l&#243;gica.</p></div><div class="card case-card "><div class="eyebrow">Arquitectura</div><h3>Clientes &#8594; Core &#8594; motores &#8594; fuentes</h3><p>Los clientes env&#237;an intenci&#243;n al Core; el Core coordina matching, normalizaci&#243;n, cesta y recomendaciones; los motores consumen fuentes comerciales, OCR/EAN y LLM local.</p></div><div class="card case-card "><div class="eyebrow">Implementaci&#243;n</div><h3>Servicio 24/7 con coste controlado</h3><p>VPS Debian, Docker, Core/Telegram, Web/PWA y Ollama local. La arquitectura prioriza reutilizaci&#243;n, aislamiento y consumo moderado.</p></div><div class="card case-card "><div class="eyebrow">Validaci&#243;n</div><h3>Live, con guardrails comerciales</h3><p>El snapshot de Orquestador documenta producci&#243;n saludable, immutable image gate PASS, audit de dependencias sin vulnerabilidades y Marketplace HTTP 200.</p></div><div class="card case-card "><div class="eyebrow">Resultado</div><h3>Caso directamente transferible a retail</h3><p>Demuestra cat&#225;logo, b&#250;squeda, pricing, equivalencias, OCR/EAN, experiencia digital e integraci&#243;n de fuentes sin pretender conocer sistemas internos de La Sirena.</p></div></div><div class="arch"><div class="kicker">Walkthrough de arquitectura</div><div class="arch-row"><div class="node"><b>Telegram / Web / PWA</b><small>clientes</small></div><div class="arrow">&#8594;</div><div class="node"><b>SmartCompra Core</b><small>intenci&#243;n &#183; matching &#183; cesta</small></div><div class="arrow">&#8594;</div><div class="node"><b>Precios &#183; OCR/EAN &#183; LLM &#183; proveedores</b><small>fuentes/servicios</small></div></div></div></div></section></main><footer class="footer"><div class="wrap footer-inner"><span>SmartCompra</span><span><a href="index.html">&#8592; Volver al portfolio</a></span></div></footer><script src="app-v4.js"></script></body></html>
-
-[executed on device: DESKTOP-TIUFLCM (ec4efb57-c0c6-4110-be3b-6f25de69e3ac)]
-
-[executed on device: DESKTOP-TIUFLCM (ec4efb57-c0c6-4110-be3b-6f25de69e3ac)]
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SmartCompra — proyecto seleccionado del portfolio de Manu Ramos Delgado.">
+<title>SmartCompra · Manu Ramos Delgado</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f4f1ea">
+<link rel="stylesheet" href="styles-v4.css">
+<link rel="stylesheet" href="styles-v4.1.css">
+<link rel="stylesheet" href="project-visual.css">
+</head>
+<body class="project-visual-page">
+<div class="paper-grain" aria-hidden="true"></div>
+<header class="site-header"><div class="shell header-inner">
+<a class="identity" href="index.html"><span class="identity-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Portfolio profesional</small></span></a>
+<nav class="main-nav" aria-label="Principal"><a href="index.html#perfil">Perfil</a><a href="index.html#capacidades">Capacidades</a><a href="index.html#trabajo">Trabajo</a><a href="cv.html">Currículum</a></nav>
+</div></header>
+<main>
+<section class="project-visual-hero"><div class="wrap">
+<a class="project-back" href="index.html#trabajo">← Volver a trabajo seleccionado</a>
+<div class="project-visual-hero-grid">
+<div data-reveal><span class="project-visual-kicker">RETAIL · DATOS · PRODUCTO</span><h1>SmartCompra</h1></div>
+<div data-reveal><p>Un asistente de compra que intenta entender lo que busca una persona, comparar alternativas y convertir información dispersa en una experiencia útil.</p><div class="project-visual-meta"><span>Retail</span><span>Matching</span><span>OCR / EAN</span><span>PWA</span><span>Automatización</span></div></div>
+</div></div></section>
+<section class="wrap product-stage" data-reveal><div class="product-stage-inner">
+<img src="assets/smartcompra-ui.png" alt="Interfaz de SmartCompra"><span class="product-stage-label">Vista del producto</span>
+</div></section>
+<section class="capabilities-section"><div class="wrap">
+<div class="capabilities-head">
+<div data-reveal><span class="project-visual-kicker">QUÉ DEMUESTRA</span><h2>Capacidades conectadas.</h2></div>
+<p data-reveal>Esta vista resume las áreas que fue necesario combinar para construir el proyecto.</p>
+</div>
+<div class="capability-map" data-reveal>
+<svg viewBox="0 0 1000 590" preserveAspectRatio="none" aria-hidden="true">
+<line x1="500" y1="295" x2="170" y2="120"/><line x1="500" y1="295" x2="830" y2="120"/>
+<line x1="500" y1="295" x2="855" y2="295"/><line x1="500" y1="295" x2="790" y2="500"/>
+<line x1="500" y1="295" x2="210" y2="500"/><line x1="500" y1="295" x2="145" y2="295"/>
+<circle cx="500" cy="295" r="5"/></svg>
+<div class="capability-core"><div><b>SmartCompra</b><small>asistente de compras</small></div></div><article class="capability-node n1"><strong>Intención</strong><span>Entender qué quiere comprar el usuario.</span></article><article class="capability-node n2"><strong>Matching</strong><span>Relacionar productos equivalentes entre fuentes.</span></article><article class="capability-node n3"><strong>Datos</strong><span>Normalizar precios, formatos y disponibilidad.</span></article><article class="capability-node n4"><strong>OCR / EAN</strong><span>Convertir tickets y códigos en información útil.</span></article><article class="capability-node n5"><strong>Producto / UX</strong><span>Hacer simple una lógica interna compleja.</span></article><article class="capability-node n6"><strong>Infraestructura</strong><span>Desplegar servicios web y automatizaciones.</span></article>
+</div></div></section>
+<section class="wrap stack-strip" data-reveal><span>Tecnologías / áreas</span><div class="stack-list"><span>React</span><span>PWA</span><span>APIs</span><span>Docker</span><span>Linux</span><span>OCR</span><span>EAN</span><span>LLM local</span></div></section>
+<section class="wrap project-outro" data-reveal><p>Este proyecto reúne producto, datos, integración y experiencia de usuario dentro de un mismo flujo.</p><a href="index.html#trabajo">Volver al portfolio ↗</a></section>
+</main>
+<footer><div class="shell footer-inner"><span>Manu Ramos Delgado</span><span>SmartCompra · proyecto seleccionado</span></div></footer>
+<script src="app-v4.js"></script>
+</body></html>

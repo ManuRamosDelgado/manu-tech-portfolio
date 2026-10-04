@@ -1,9 +1,48 @@
-[Reading 5 lines from start (total: 5 lines, 0 remaining)]
-
-[Reading 1 lines from start (total: 1 lines, 0 remaining)]
-
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MIL IAgentes &#8212; Caso de estudio</title><link rel="stylesheet" href="styles-v4.css"><link rel="stylesheet" href="styles-v4.1.css"><link rel="stylesheet" href="subpage-v4.css"></head><body><nav><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Caso de estudio</small></span></a><div class="nav-links"><a href="index.html#trabajo">Proyectos</a><a href="dashboard.html">Dashboard</a></div></div></nav><main><section class="wrap page-hero"><div class="eyebrow">Voice AI &#183; Reliability</div><h1>MIL IAgentes</h1><p style="max-width:820px;color:var(--soft);font-size:18px">Plataforma de agentes inteligentes orientada a voz, citas y post-servicio. El valor del caso est&#225; en las garant&#237;as alrededor de los datos y el go-live, no en afirmar clientes reales.</p><span class="pill cyan">FASE 6 &#183; Synthetic-only</span></section><section><div class="wrap"><div class="case-grid"><div class="card case-card "><div class="eyebrow">Problema</div><h3>Una cita no es solo un formulario</h3><p>Confirmaciones, recordatorios, lista de espera y acciones post-servicio deben evitar duplicados, solapamientos y estados inconsistentes.</p></div><div class="card case-card "><div class="eyebrow">Decisi&#243;n</div><h3>Dise&#241;ar primero las invariantes</h3><p>RLS, idempotencia, anti-solapamiento, gesti&#243;n transaccional y patr&#243;n Outbox se usan para proteger consistencia antes de a&#241;adir m&#225;s superficie de producto.</p></div><div class="card case-card "><div class="eyebrow">Arquitectura</div><h3>API + datos + dashboard + proveedores</h3><p>PostgreSQL act&#250;a como base relacional; la API gestiona l&#243;gica; React/Vite presenta operaciones; proveedores externos se mantienen desacoplados para poder sustituirlos o probarlos.</p></div><div class="card case-card "><div class="eyebrow">Implementaci&#243;n</div><h3>Suites por dominio</h3><p>Las pruebas no se presentan como una cifra &#250;nica sin contexto: existen suites separadas para appointments, post-servicio, dashboard y readiness.</p></div><div class="card case-card "><div class="eyebrow">Validaci&#243;n</div><h3>Regresi&#243;n global documentada</h3><p>El snapshot de Orquestador registra 516/516 PASS, TypeScript limpio en 6 workspaces, build de dashboard PASS y npm audit 0.</p></div><div class="card case-card "><div class="eyebrow">Resultado</div><h3>Go-live deliberadamente bloqueado</h3><p>El proyecto permanece synthetic-only: sin clientes, datos, billing, Google Calendar ni PSTN reales hasta una revisi&#243;n espec&#237;fica de go-live.</p></div></div></div></section></main><footer class="footer"><div class="wrap footer-inner"><span>MIL IAgentes</span><span><a href="index.html">&#8592; Volver al portfolio</a></span></div></footer><script src="app-v4.js"></script></body></html>
-
-[executed on device: DESKTOP-TIUFLCM (ec4efb57-c0c6-4110-be3b-6f25de69e3ac)]
-
-[executed on device: DESKTOP-TIUFLCM (ec4efb57-c0c6-4110-be3b-6f25de69e3ac)]
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MIL IAgentes — proyecto seleccionado del portfolio de Manu Ramos Delgado.">
+<title>MIL IAgentes · Manu Ramos Delgado</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f4f1ea">
+<link rel="stylesheet" href="styles-v4.css">
+<link rel="stylesheet" href="styles-v4.1.css">
+<link rel="stylesheet" href="project-visual.css">
+</head>
+<body class="project-visual-page">
+<div class="paper-grain" aria-hidden="true"></div>
+<header class="site-header"><div class="shell header-inner">
+<a class="identity" href="index.html"><span class="identity-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Portfolio profesional</small></span></a>
+<nav class="main-nav" aria-label="Principal"><a href="index.html#perfil">Perfil</a><a href="index.html#capacidades">Capacidades</a><a href="index.html#trabajo">Trabajo</a><a href="cv.html">Currículum</a></nav>
+</div></header>
+<main>
+<section class="project-visual-hero"><div class="wrap">
+<a class="project-back" href="index.html#trabajo">← Volver a trabajo seleccionado</a>
+<div class="project-visual-hero-grid">
+<div data-reveal><span class="project-visual-kicker">AGENTES · SISTEMAS · FIABILIDAD</span><h1>MIL IAgentes</h1></div>
+<div data-reveal><p>Una plataforma de agentes de voz y citas diseñada para que las acciones importantes se validen en servidor y queden bajo reglas explícitas.</p><div class="project-visual-meta"><span>Agentes</span><span>APIs</span><span>PostgreSQL</span><span>Testing</span><span>Control</span></div></div>
+</div></div></section>
+<section class="wrap product-stage" data-reveal><div class="product-stage-inner">
+<img src="assets/iagentes-web.png" alt="Web comercial de MIL IAgentes"><span class="product-stage-label">Vista del producto</span>
+</div></section>
+<section class="capabilities-section"><div class="wrap">
+<div class="capabilities-head">
+<div data-reveal><span class="project-visual-kicker">QUÉ DEMUESTRA</span><h2>Capacidades conectadas.</h2></div>
+<p data-reveal>Esta vista resume las áreas que fue necesario combinar para construir el proyecto.</p>
+</div>
+<div class="capability-map" data-reveal>
+<svg viewBox="0 0 1000 590" preserveAspectRatio="none" aria-hidden="true">
+<line x1="500" y1="295" x2="170" y2="120"/><line x1="500" y1="295" x2="830" y2="120"/>
+<line x1="500" y1="295" x2="855" y2="295"/><line x1="500" y1="295" x2="790" y2="500"/>
+<line x1="500" y1="295" x2="210" y2="500"/><line x1="500" y1="295" x2="145" y2="295"/>
+<circle cx="500" cy="295" r="5"/></svg>
+<div class="capability-core"><div><b>MIL IAgentes</b><small>agentes + operaciones</small></div></div><article class="capability-node n1"><strong>APIs</strong><span>Conectar voz, citas y herramientas.</span></article><article class="capability-node n2"><strong>Datos</strong><span>Persistencia, aislamiento y consistencia.</span></article><article class="capability-node n3"><strong>Idempotencia</strong><span>Evitar duplicidades en acciones sensibles.</span></article><article class="capability-node n4"><strong>Testing</strong><span>Comprobar comportamiento antes del go-live.</span></article><article class="capability-node n5"><strong>Guardrails</strong><span>Separar lo que el modelo propone de lo que puede ejecutar.</span></article><article class="capability-node n6"><strong>Dashboard</strong><span>Dar visibilidad operativa a lo que ocurre.</span></article>
+</div></div></section>
+<section class="wrap stack-strip" data-reveal><span>Tecnologías / áreas</span><div class="stack-list"><span>TypeScript</span><span>PostgreSQL</span><span>RLS</span><span>Outbox</span><span>REST</span><span>React</span><span>Testing</span><span>Vapi / Telnyx</span></div></section>
+<section class="wrap project-outro" data-reveal><p>Aquí la capacidad principal no es solo crear un agente: es diseñar límites, consistencia y control alrededor de él.</p><a href="index.html#trabajo">Volver al portfolio ↗</a></section>
+</main>
+<footer><div class="shell footer-inner"><span>Manu Ramos Delgado</span><span>MIL IAgentes · proyecto seleccionado</span></div></footer>
+<script src="app-v4.js"></script>
+</body></html>

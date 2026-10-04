@@ -1,9 +1,48 @@
-[Reading 5 lines from start (total: 5 lines, 0 remaining)]
-
-[Reading 1 lines from start (total: 1 lines, 0 remaining)]
-
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MIL House / Home Automation &#8212; Caso de estudio</title><link rel="stylesheet" href="styles-v4.css"><link rel="stylesheet" href="styles-v4.1.css"><link rel="stylesheet" href="subpage-v4.css"></head><body><nav><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Caso de estudio</small></span></a><div class="nav-links"><a href="index.html#trabajo">Proyectos</a><a href="dashboard.html">Dashboard</a></div></div></nav><main><section class="wrap page-hero"><div class="eyebrow">Automation Lab</div><h1>MIL House / Home Automation</h1><p style="max-width:820px;color:var(--soft);font-size:18px">Laboratorio personal para automatizaci&#243;n dom&#233;stica, sensores y actuaci&#243;n f&#237;sica. Se usa como proyecto secundario para demostrar integraci&#243;n, troubleshooting y prudencia operacional.</p><span class="pill amber">CANARY</span></section><section><div class="wrap"><div class="case-grid"><div class="card case-card "><div class="eyebrow">Problema</div><h3>El mundo f&#237;sico no tolera estados inventados</h3><p>Una automatizaci&#243;n dom&#233;stica debe distinguir entre intenci&#243;n, estado observado y acci&#243;n realmente completada.</p></div><div class="card case-card "><div class="eyebrow">Decisi&#243;n</div><h3>Acceptance Gate A&#8594;D</h3><p>Preflight y body model antes de deploy, Core solo si Gate A pasa, aceptaci&#243;n f&#237;sica posterior y estabilidad antes de declarar el sistema estable.</p></div><div class="card case-card "><div class="eyebrow">Arquitectura</div><h3>Home Assistant + dispositivos + l&#243;gica</h3><p>Home Assistant act&#250;a como n&#250;cleo; sensores Zigbee y dispositivos aportan estado; la l&#243;gica condicional decide y verifica.</p></div><div class="card case-card "><div class="eyebrow">Implementaci&#243;n</div><h3>Backups y hashes antes de cambios</h3><p>Los cambios de Core se tratan como operaciones reversibles, con preflight, backups y verificaci&#243;n.</p></div><div class="card case-card "><div class="eyebrow">Validaci&#243;n</div><h3>CANARY deliberado</h3><p>El sistema no se declara estable mientras no pase la aceptaci&#243;n real de cuerpo, acciones, conversaci&#243;n y estabilidad.</p></div><div class="card case-card "><div class="eyebrow">Resultado</div><h3>Troubleshooting aplicado</h3><p>El laboratorio permite trabajar con latencias, sensores, condiciones nocturnas, estados y fallos que no aparecen en una demo puramente software.</p></div></div></div></section></main><footer class="footer"><div class="wrap footer-inner"><span>MIL House / Home Automation</span><span><a href="index.html">&#8592; Volver al portfolio</a></span></div></footer><script src="app-v4.js"></script></body></html>
-
-[executed on device: DESKTOP-TIUFLCM (ec4efb57-c0c6-4110-be3b-6f25de69e3ac)]
-
-[executed on device: DESKTOP-TIUFLCM (ec4efb57-c0c6-4110-be3b-6f25de69e3ac)]
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MIL House — proyecto seleccionado del portfolio de Manu Ramos Delgado.">
+<title>MIL House · Manu Ramos Delgado</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f4f1ea">
+<link rel="stylesheet" href="styles-v4.css">
+<link rel="stylesheet" href="styles-v4.1.css">
+<link rel="stylesheet" href="project-visual.css">
+</head>
+<body class="project-visual-page">
+<div class="paper-grain" aria-hidden="true"></div>
+<header class="site-header"><div class="shell header-inner">
+<a class="identity" href="index.html"><span class="identity-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Portfolio profesional</small></span></a>
+<nav class="main-nav" aria-label="Principal"><a href="index.html#perfil">Perfil</a><a href="index.html#capacidades">Capacidades</a><a href="index.html#trabajo">Trabajo</a><a href="cv.html">Currículum</a></nav>
+</div></header>
+<main>
+<section class="project-visual-hero"><div class="wrap">
+<a class="project-back" href="index.html#trabajo">← Volver a trabajo seleccionado</a>
+<div class="project-visual-hero-grid">
+<div data-reveal><span class="project-visual-kicker">AUTOMATIZACIÓN · INTEGRACIÓN · HOGAR</span><h1>MIL House</h1></div>
+<div data-reveal><p>Automatización doméstica orientada a combinar sensores, presencia, reglas y control con una lógica de aceptación progresiva.</p><div class="project-visual-meta"><span>Home Assistant</span><span>Zigbee</span><span>Sensores</span><span>Reglas</span><span>Aceptación</span></div></div>
+</div></div></section>
+<section class="wrap product-stage" data-reveal><div class="product-stage-inner">
+<img src="assets/calma-ui.png" alt="Visual de automatización"><span class="product-stage-label">Vista del producto</span>
+</div></section>
+<section class="capabilities-section"><div class="wrap">
+<div class="capabilities-head">
+<div data-reveal><span class="project-visual-kicker">QUÉ DEMUESTRA</span><h2>Capacidades conectadas.</h2></div>
+<p data-reveal>Esta vista resume las áreas que fue necesario combinar para construir el proyecto.</p>
+</div>
+<div class="capability-map" data-reveal>
+<svg viewBox="0 0 1000 590" preserveAspectRatio="none" aria-hidden="true">
+<line x1="500" y1="295" x2="170" y2="120"/><line x1="500" y1="295" x2="830" y2="120"/>
+<line x1="500" y1="295" x2="855" y2="295"/><line x1="500" y1="295" x2="790" y2="500"/>
+<line x1="500" y1="295" x2="210" y2="500"/><line x1="500" y1="295" x2="145" y2="295"/>
+<circle cx="500" cy="295" r="5"/></svg>
+<div class="capability-core"><div><b>MIL House</b><small>automatización física</small></div></div><article class="capability-node n1"><strong>Sensores</strong><span>Convertir presencia y estado en señales útiles.</span></article><article class="capability-node n2"><strong>Reglas</strong><span>Decidir cuándo actuar y cuándo no.</span></article><article class="capability-node n3"><strong>Integración</strong><span>Conectar dispositivos y servicios.</span></article><article class="capability-node n4"><strong>Zigbee</strong><span>Trabajar con una red de dispositivos local.</span></article><article class="capability-node n5"><strong>Aceptación</strong><span>Validar cambios antes de ampliar autoridad.</span></article><article class="capability-node n6"><strong>Experiencia</strong><span>Hacer que la automatización desaparezca del camino.</span></article>
+</div></div></section>
+<section class="wrap stack-strip" data-reveal><span>Tecnologías / áreas</span><div class="stack-list"><span>Home Assistant</span><span>Zigbee</span><span>Sensores</span><span>Automatizaciones</span><span>Logs</span><span>Gates</span></div></section>
+<section class="wrap project-outro" data-reveal><p>Este proyecto muestra integración entre software y entorno físico, con foco en control y aceptación gradual.</p><a href="index.html#trabajo">Volver al portfolio ↗</a></section>
+</main>
+<footer><div class="shell footer-inner"><span>Manu Ramos Delgado</span><span>MIL House · proyecto seleccionado</span></div></footer>
+<script src="app-v4.js"></script>
+</body></html>
