@@ -11,8 +11,8 @@ const status=document.getElementById("assistantStatus");
 const history=[];
 
 if(!launcher||!panel||!input||!send||!messagesEl)return;
-if(config.enabled===false){launcher.hidden=true;return}
-launcher.hidden=false;
+launcher.hidden=true;
+if(config.enabled===false)return;
 
 const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
 
@@ -34,7 +34,24 @@ function setOpen(open){
 launcher.addEventListener("click",()=>setOpen(!panel.classList.contains("open")));
 close.addEventListener("click",()=>setOpen(false));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&panel.classList.contains("open"))setOpen(false)});
-if(new URLSearchParams(location.search).get("assistant")==="1")setOpen(true);
+
+async function revealLauncherWhenReady(){
+  if(config.requireReady){
+    const endpoint=config.healthEndpoint||(config.endpoint?config.endpoint.replace(/\/v1\/chat(?:\?.*)?$/,"/health"):"");
+    if(!endpoint)return;
+    const controller=new AbortController();
+    const timer=setTimeout(()=>controller.abort(),2500);
+    try{
+      const res=await fetch(endpoint,{headers:{"accept":"application/json"},signal:controller.signal});
+      const health=await res.json().catch(()=>({}));
+      if(!res.ok||health.readyForPublic!==true)return;
+    }catch{return}
+    finally{clearTimeout(timer)}
+  }
+  launcher.hidden=false;
+  if(new URLSearchParams(location.search).get("assistant")==="1")setOpen(true);
+}
+revealLauncherWhenReady();
 
 function appendUser(text){
   const article=document.createElement("article");
