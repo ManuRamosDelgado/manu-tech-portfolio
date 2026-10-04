@@ -81,6 +81,22 @@ function appendContactOffer(){
   const card=document.createElement("section");
   card.className="assistant-contact-card";
   card.id="assistantContactCard";
+
+  if(config.autoContact===false){
+    const phone=String(config.publicPhone||"").replace(/\s+/g,"");
+    card.innerHTML=
+      '<span class="contact-card-kicker">CONTACTO</span>'+
+      '<h3>¿Quieres hablar con Manu?</h3>'+
+      '<p>Puedes escribirle o llamarle directamente. El asistente no enviará nada en tu nombre sin un canal de correo verificado.</p>'+
+      '<div class="contact-card-actions">'+
+      '<a class="contact-primary" href="mailto:'+escapeHtml(config.publicEmail||"")+'">Escribir a Manu</a>'+
+      (phone?'<a class="contact-secondary" href="tel:'+escapeHtml(phone)+'">Llamar</a>':"")+
+      '</div>';
+    messagesEl.appendChild(card);
+    scrollBottom();
+    return;
+  }
+
   card.innerHTML=
     '<span class="contact-card-kicker">CONTACTO</span>'+
     '<h3>¿Quieres que Manu reciba tus datos?</h3>'+
