@@ -3,347 +3,304 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Portfolio profesional de Manu Ramos Delgado: sistemas, automatización, IA aplicada y producto digital.">
-<title>Manu Ramos Delgado — Sistemas · Automatización · IA aplicada</title>
-<link rel="stylesheet" href="styles-v2.css">
+<meta name="description" content="Portfolio profesional de Manu Ramos Delgado — sistemas, automatización, IA aplicada y producto digital.">
+<title>Manu Ramos Delgado — Portfolio</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="styles-v3.css">
 </head>
 <body>
-<div class="noise" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a href="#top" class="identity">
-      <span class="monogram">MR</span>
-      <span><b>Manu Ramos Delgado</b><small>Technology Builder</small></span>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="nameplate" href="#top">
+      <span class="mark">MR</span>
+      <span class="nameplate-copy"><b>Manu Ramos Delgado</b><small>Sistemas · Automatización · IA aplicada</small></span>
     </a>
-    <nav class="desktop-nav" aria-label="Principal">
-      <a href="#aportacion">Qué aporto</a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="#perfil">Perfil</a>
       <a href="#capacidades">Capacidades</a>
-      <a href="#trayectoria">Trayectoria</a>
-      <a href="#pruebas">Evidencia</a>
+      <a href="#evidencia">Evidencia</a>
+      <a href="cv.html">CV</a>
     </nav>
-    <button class="recruiter-btn" id="recruiterOpen" type="button"><span></span>Vista 60 segundos</button>
+    <button class="quick-view" id="quickOpen" type="button">60s</button>
   </div>
 </header>
 
 <main id="top">
-<section class="hero-v2">
-  <div class="wrap hero-v2-grid">
-    <div class="hero-copy-v2">
-      <div class="overline">NEGOCIO ↔ SISTEMAS ↔ AUTOMATIZACIÓN ↔ IA</div>
-      <h1>Convierto problemas reales en <em>soluciones que funcionan.</em></h1>
-      <p class="hero-intro">Mi valor no está en una única tecnología. Está en <strong>entender, conectar, construir y validar</strong> hasta que una idea se convierte en algo útil.</p>
-      <div class="hero-actions-v2">
-        <a class="button-main" href="#aportacion">Descubrir mi perfil</a>
-        <a class="button-quiet" href="cv.html">CV <span>↗</span></a>
+<section class="hero">
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <div class="kicker">PERFIL TECNOLÓGICO MULTIDISCIPLINAR</div>
+      <h1><span>Entender bien.</span><span>Construir lo necesario.</span><span class="soft-gradient">Mejorar lo que importa.</span></h1>
+      <p>Vengo de operaciones y negocio. Hoy aplico sistemas, automatización e inteligencia artificial para resolver problemas de forma práctica, medible y útil.</p>
+      <div class="hero-actions">
+        <a href="#perfil" class="btn primary">Ver cómo trabajo</a>
+        <a href="cv.html" class="btn secondary">CV</a>
       </div>
-      <div class="signature">
+      <div class="hero-note">
         <span>NO LLEGUÉ A TECNOLOGÍA POR EL CAMINO TRADICIONAL.</span>
-        <strong>Llegué construyendo.</strong>
+        <b>Llegué construyendo.</b>
       </div>
     </div>
 
-    <div class="constellation" id="constellation" aria-label="Mapa de capacidades de Manu">
-      <svg class="constellation-lines" viewBox="0 0 600 600" aria-hidden="true">
-        <line x1="300" y1="300" x2="300" y2="82"/>
-        <line x1="300" y1="300" x2="512" y2="220"/>
-        <line x1="300" y1="300" x2="455" y2="468"/>
-        <line x1="300" y1="300" x2="145" y2="468"/>
-        <line x1="300" y1="300" x2="88" y2="220"/>
-        <circle cx="300" cy="300" r="205"/>
-      </svg>
-      <button class="core-node" data-focus="core" type="button">
-        <span class="core-ring"></span>
-        <small>PERFIL</small>
-        <b>MANU</b>
-        <em>conecta las piezas</em>
-      </button>
-      <button class="orbit-node node-business" data-focus="business" type="button"><small>01</small><b>NEGOCIO</b></button>
-      <button class="orbit-node node-systems" data-focus="systems" type="button"><small>02</small><b>SISTEMAS</b></button>
-      <button class="orbit-node node-ai" data-focus="ai" type="button"><small>03</small><b>IA</b></button>
-      <button class="orbit-node node-product" data-focus="product" type="button"><small>04</small><b>PRODUCTO</b></button>
-      <button class="orbit-node node-auto" data-focus="automation" type="button"><small>05</small><b>AUTOMATIZACIÓN</b></button>
+    <div class="workbench" aria-label="De problema a solución">
+      <div class="workbench-top">
+        <span>DE PROBLEMA A SISTEMA ÚTIL</span>
+        <span class="live-dot">proceso</span>
+      </div>
 
-      <aside class="focus-card" id="focusCard" aria-live="polite">
-        <span class="focus-kicker">Perfil híbrido</span>
-        <h2>No compito por saber una sola cosa mejor que todos.</h2>
-        <p>Compito por ser capaz de conectar negocio, tecnología y ejecución para hacer avanzar un problema real.</p>
-      </aside>
+      <div class="flow-canvas" id="flowCanvas">
+        <svg viewBox="0 0 680 430" preserveAspectRatio="none" aria-hidden="true">
+          <path class="flow-line line-a" d="M55 102 C180 102, 170 196, 315 196 S465 102, 625 102"/>
+          <path class="flow-line line-b" d="M55 328 C180 328, 170 234, 315 234 S465 328, 625 328"/>
+          <path class="flow-line line-c" d="M75 215 C185 215, 195 215, 315 215 S485 215, 605 215"/>
+        </svg>
+
+        <div class="flow-node source n1"><small>ENTRADA</small><b>Necesidad</b></div>
+        <div class="flow-node source n2"><small>CONTEXTO</small><b>Personas</b></div>
+        <div class="flow-node source n3"><small>SEÑAL</small><b>Datos</b></div>
+
+        <div class="flow-center">
+          <span class="center-label">TRABAJO</span>
+          <div class="center-stack">
+            <b>Entender</b><i>→</i><b>Decidir</b><i>→</i><b>Construir</b><i>→</i><b>Validar</b>
+          </div>
+        </div>
+
+        <div class="flow-node result r1"><small>SALIDA</small><b>Solución</b></div>
+        <div class="flow-node result r2"><small>EFECTO</small><b>Menos fricción</b></div>
+        <div class="flow-node result r3"><small>OBJETIVO</small><b>Valor útil</b></div>
+
+        <span class="pulse p1"></span><span class="pulse p2"></span><span class="pulse p3"></span>
+      </div>
+
+      <div class="workbench-foot">
+        <span>Negocio</span><span>Sistemas</span><span>Automatización</span><span>IA</span><span>Producto</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="signal-strip" aria-label="Resumen">
-  <div class="wrap signal-grid">
-    <div><b>OPERACIONES</b><span>Experiencia real con equipos, costes, stock y servicio.</span></div>
-    <div><b>SISTEMAS</b><span>Linux, Docker, servicios, datos, APIs y troubleshooting.</span></div>
-    <div><b>IA APLICADA</b><span>La uso como multiplicador dentro de procesos reales.</span></div>
-    <div><b>PRODUCTO</b><span>Construyo pensando en utilidad, experiencia y resultado.</span></div>
+<section class="quiet-strip">
+  <div class="shell quiet-grid">
+    <div><strong>01</strong><span>Experiencia operativa real</span></div>
+    <div><strong>02</strong><span>Capacidad técnica aplicada</span></div>
+    <div><strong>03</strong><span>Aprendizaje rápido</span></div>
+    <div><strong>04</strong><span>Criterio antes que herramienta</span></div>
   </div>
 </section>
 
-<section class="section-v2" id="aportacion">
-  <div class="wrap">
-    <div class="section-title-v2">
-      <span>01 · QUÉ APORTO</span>
-      <h2>Una forma de pensar útil para equipos que necesitan <em>hacer que las cosas pasen.</em></h2>
+<section class="section" id="perfil">
+  <div class="shell profile-layout">
+    <div class="sticky-intro">
+      <span class="section-index">01 · PERFIL</span>
+      <h2>No intento parecer especialista en todo.</h2>
+      <p>Mi perfil tiene más sentido cuando las piezas se conectan.</p>
     </div>
 
-    <div class="impact-grid">
-      <article class="impact-card big-card">
-        <div class="impact-icon">◎</div>
+    <div class="profile-story">
+      <article class="story-block">
+        <div class="story-number">A</div>
         <div>
-          <span class="card-index">CAPACIDAD 01</span>
-          <h3>Traduzco problemas en sistemas.</h3>
-          <p>Puedo pasar de una necesidad poco definida a un mapa de piezas, dependencias, riesgos y pasos concretos.</p>
+          <h3>Primero, entender.</h3>
+          <p>Antes de hablar de tecnología intento entender qué está ocurriendo, quién lo sufre, qué impacto tiene y qué restricciones existen.</p>
         </div>
       </article>
-      <article class="impact-card">
-        <div class="impact-icon">↯</div>
+
+      <article class="story-block">
+        <div class="story-number">B</div>
         <div>
-          <span class="card-index">CAPACIDAD 02</span>
-          <h3>Detecto dónde automatizar.</h3>
-          <p>Busco tareas repetitivas, cuellos de botella y puntos donde integrar herramientas reduce fricción.</p>
+          <h3>Después, simplificar.</h3>
+          <p>Divido el problema en piezas. Busco qué puede eliminarse, automatizarse, integrarse o resolverse con una herramienta existente.</p>
         </div>
       </article>
-      <article class="impact-card">
-        <div class="impact-icon">◇</div>
+
+      <article class="story-block">
+        <div class="story-number">C</div>
         <div>
-          <span class="card-index">CAPACIDAD 03</span>
-          <h3>Aprendo por necesidad real.</h3>
-          <p>No acumulo tecnologías por catálogo: incorporo las que necesita el problema y las pongo a trabajar.</p>
+          <h3>Construir solo lo que aporta valor.</h3>
+          <p>Prefiero una solución sencilla, verificable y mantenible antes que una arquitectura impresionante pero innecesaria.</p>
         </div>
       </article>
-      <article class="impact-card">
-        <div class="impact-icon">✓</div>
+
+      <article class="story-block">
+        <div class="story-number">D</div>
         <div>
-          <span class="card-index">CAPACIDAD 04</span>
-          <h3>Valido antes de escalar.</h3>
-          <p>Tests, logs, gates y criterios de aceptación antes de confiar en una solución.</p>
-        </div>
-      </article>
-      <article class="impact-card big-card">
-        <div class="impact-icon">AI</div>
-        <div>
-          <span class="card-index">CAPACIDAD 05</span>
-          <h3>Uso IA para multiplicar capacidad, no para fingir conocimiento.</h3>
-          <p>La IA acelera análisis, desarrollo, pruebas y documentación. El criterio, las decisiones y la responsabilidad siguen siendo míos.</p>
+          <h3>Validar antes de confiar.</h3>
+          <p>Tests, logs, gates y observación real. Si algo no está demostrado, lo trato como una hipótesis, no como un éxito.</p>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section-v2 darker" id="capacidades">
-  <div class="wrap">
-    <div class="section-title-v2 split-title">
-      <div><span>02 · CAPACIDADES</span><h2>Lo que puedo mover dentro de un sistema.</h2></div>
-      <p>Una visión transversal: desde el entorno donde corre el software hasta la persona que lo utiliza.</p>
+<section class="section capability-section" id="capacidades">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <span class="section-index">02 · CAPACIDADES</span>
+        <h2>Lo que sé poner a trabajar.</h2>
+      </div>
+      <p>No es una lista de herramientas que he tocado. Es una selección de ámbitos que ya he utilizado para construir, integrar, desplegar o validar sistemas.</p>
     </div>
 
-    <div class="cap-map">
-      <article>
-        <div class="cap-code">SYS</div>
+    <div class="capabilities">
+      <article class="capability">
+        <div class="cap-top"><span>01</span><i>SYS</i></div>
         <h3>Sistemas</h3>
-        <p>Servicios, Linux, Docker, VPS, Windows, operación y diagnóstico.</p>
-        <div><span>Linux</span><span>Docker</span><span>VPS</span><span>Health checks</span></div>
+        <p>Linux, Windows, servicios, VPS, Docker, logs, health checks y resolución de problemas.</p>
+        <div class="cap-tags"><span>Linux</span><span>Docker</span><span>VPS</span><span>Servicios</span></div>
       </article>
-      <article>
-        <div class="cap-code">DAT</div>
-        <h3>Datos</h3>
-        <p>Bases relacionales, consultas, estructura, normalización y control de acceso.</p>
-        <div><span>PostgreSQL</span><span>SQL</span><span>RLS</span><span>Modelado</span></div>
-      </article>
-      <article>
-        <div class="cap-code">INT</div>
-        <h3>Integración</h3>
-        <p>Conectar aplicaciones y servicios con APIs, eventos y flujos robustos.</p>
-        <div><span>REST</span><span>Outbox</span><span>Idempotencia</span><span>Eventos</span></div>
-      </article>
-      <article>
-        <div class="cap-code">AUT</div>
+      <article class="capability">
+        <div class="cap-top"><span>02</span><i>AUT</i></div>
         <h3>Automatización</h3>
-        <p>Convertir tareas repetitivas y procesos manuales en flujos controlados.</p>
-        <div><span>Workflows</span><span>Agentes</span><span>Home Assistant</span><span>Zigbee</span></div>
+        <p>Procesos, workflows, eventos, integración entre piezas y reducción de tareas repetitivas.</p>
+        <div class="cap-tags"><span>APIs</span><span>Eventos</span><span>Workflows</span><span>Idempotencia</span></div>
       </article>
-      <article>
-        <div class="cap-code">AI</div>
+      <article class="capability">
+        <div class="cap-top"><span>03</span><i>DAT</i></div>
+        <h3>Datos</h3>
+        <p>Estructura, consultas, persistencia y controles básicos para que el dato sea útil y confiable.</p>
+        <div class="cap-tags"><span>PostgreSQL</span><span>SQL</span><span>RLS</span><span>Modelado</span></div>
+      </article>
+      <article class="capability">
+        <div class="cap-top"><span>04</span><i>AI</i></div>
         <h3>IA aplicada</h3>
-        <p>LLM locales, agentes y NLP integrados dentro de productos o procesos.</p>
-        <div><span>LLM</span><span>Ollama</span><span>NLP</span><span>AI agents</span></div>
+        <p>LLM locales, agentes y NLP integrados dentro de flujos y productos, no como capa decorativa.</p>
+        <div class="cap-tags"><span>LLM</span><span>Ollama</span><span>Agentes</span><span>NLP</span></div>
       </article>
-      <article>
-        <div class="cap-code">UX</div>
+      <article class="capability">
+        <div class="cap-top"><span>05</span><i>UX</i></div>
         <h3>Producto digital</h3>
-        <p>Interfaces, PWA, mobile-first, prototipado y experiencia de usuario.</p>
-        <div><span>React</span><span>TypeScript</span><span>Vite</span><span>PWA</span></div>
+        <p>Interfaces web, PWA, experiencia móvil, iteración visual y decisiones centradas en usuario.</p>
+        <div class="cap-tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>PWA</span></div>
+      </article>
+      <article class="capability">
+        <div class="cap-top"><span>06</span><i>OPS</i></div>
+        <h3>Operación</h3>
+        <p>Equipos, costes, stock, servicio, organización y presión real: el contexto que da sentido al resto.</p>
+        <div class="cap-tags"><span>Equipos</span><span>Costes</span><span>Stock</span><span>Servicio</span></div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section-v2 thinking-section">
-  <div class="wrap thinking-layout">
-    <div class="thinking-copy">
-      <span>03 · CÓMO PIENSO</span>
-      <h2>Antes de preguntar <em>“¿con qué lo hacemos?”</em>, pregunto <em>“¿qué necesitamos resolver?”</em></h2>
-      <p>Esa diferencia cambia la arquitectura, las herramientas y el resultado.</p>
+<section class="section evidence-section" id="evidencia">
+  <div class="shell evidence-layout">
+    <div class="sticky-intro">
+      <span class="section-index">03 · EVIDENCIA</span>
+      <h2>Los proyectos están aquí para demostrar, no para ocupar el protagonismo.</h2>
+      <p>Una muestra corta de lo que cada uno revela sobre mi forma de trabajar.</p>
     </div>
 
-    <div class="thinking-rail">
-      <div class="rail-step active">
-        <span>01</span><b>ENTENDER</b><p>Problema, usuario, negocio y restricciones.</p>
-      </div>
-      <div class="rail-step">
-        <span>02</span><b>SEPARAR</b><p>Convertir complejidad en piezas manejables.</p>
-      </div>
-      <div class="rail-step">
-        <span>03</span><b>DECIDIR</b><p>Elegir la solución más simple que puede funcionar.</p>
-      </div>
-      <div class="rail-step">
-        <span>04</span><b>CONSTRUIR</b><p>Iterar rápido sin perder control.</p>
-      </div>
-      <div class="rail-step">
-        <span>05</span><b>VALIDAR</b><p>Demostrar comportamiento antes de confiar.</p>
-      </div>
-      <div class="rail-step">
-        <span>06</span><b>MEJORAR</b><p>Feedback, observación y siguiente versión.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-v2 evidence-section" id="pruebas">
-  <div class="wrap">
-    <div class="section-title-v2">
-      <span>04 · EVIDENCIA</span>
-      <h2>No necesitas conocer todos mis proyectos.<br><em>Solo lo que demuestran de mí.</em></h2>
-    </div>
-
-    <div class="evidence-grid">
-      <a href="project-smartcompra.html" class="evidence-card featured-evidence">
-        <div class="evidence-label">RETAIL · PRODUCTO · IA</div>
-        <h3>SmartCompra</h3>
-        <p><strong>Demuestra:</strong> entender intención de cliente, datos imperfectos, producto, precio, experiencia y arquitectura desacoplada.</p>
-        <span>Ver evidencia →</span>
+    <div class="evidence-list">
+      <a href="project-smartcompra.html" class="evidence-row">
+        <div class="evidence-num">01</div>
+        <div>
+          <span class="evidence-type">RETAIL · IA · PRODUCTO</span>
+          <h3>SmartCompra</h3>
+          <p>Demuestra capacidad para trabajar con intención de usuario, producto, precio, datos imperfectos y experiencia de compra.</p>
+        </div>
+        <span class="evidence-arrow">↗</span>
       </a>
-      <a href="project-iagentes.html" class="evidence-card">
-        <div class="evidence-label">FIABILIDAD · DATOS · APIs</div>
-        <h3>MIL IAgentes</h3>
-        <p><strong>Demuestra:</strong> que pienso en consistencia, seguridad y validación antes del go-live.</p>
-        <span>Ver evidencia →</span>
+      <a href="project-iagentes.html" class="evidence-row">
+        <div class="evidence-num">02</div>
+        <div>
+          <span class="evidence-type">FIABILIDAD · DATOS · APIs</span>
+          <h3>MIL IAgentes</h3>
+          <p>Demuestra atención a consistencia, seguridad, validación y preparación antes del go-live.</p>
+        </div>
+        <span class="evidence-arrow">↗</span>
       </a>
-      <a href="project-trader.html" class="evidence-card">
-        <div class="evidence-label">RIESGO · EVIDENCIA · CONTROL</div>
-        <h3>MIL Trader</h3>
-        <p><strong>Demuestra:</strong> que saber automatizar también significa saber cuándo no ejecutar.</p>
-        <span>Ver evidencia →</span>
+      <a href="project-trader.html" class="evidence-row">
+        <div class="evidence-num">03</div>
+        <div>
+          <span class="evidence-type">RIESGO · CONTROL · EVIDENCIA</span>
+          <h3>MIL Trader</h3>
+          <p>Demuestra que automatizar también significa saber cuándo no ejecutar.</p>
+        </div>
+        <span class="evidence-arrow">↗</span>
       </a>
-      <a href="project-calma.html" class="evidence-card">
-        <div class="evidence-label">UX · PRODUCTO · ITERACIÓN</div>
-        <h3>CALMA World</h3>
-        <p><strong>Demuestra:</strong> sensibilidad de producto, feedback, frontend y experiencia de usuario.</p>
-        <span>Ver evidencia →</span>
+      <a href="project-calma.html" class="evidence-row">
+        <div class="evidence-num">04</div>
+        <div>
+          <span class="evidence-type">UX · PRODUCTO · ITERACIÓN</span>
+          <h3>CALMA World</h3>
+          <p>Demuestra sensibilidad de producto, feedback, frontend y mejora iterativa de una experiencia.</p>
+        </div>
+        <span class="evidence-arrow">↗</span>
       </a>
     </div>
   </div>
 </section>
 
-<section class="section-v2 darker" id="trayectoria">
-  <div class="wrap career-layout">
-    <div class="career-intro">
-      <span>05 · TRAYECTORIA</span>
-      <h2>Mi ventaja es que antes de pensar en sistemas, tuve que hacer funcionar negocios.</h2>
-      <p>Equipos, costes, stock, horarios, clientes, presión operativa y decisiones con consecuencias reales.</p>
+<section class="section path-section">
+  <div class="shell">
+    <div class="section-head path-head">
+      <div>
+        <span class="section-index">04 · TRAYECTORIA</span>
+        <h2>La tecnología llegó después.<br>La responsabilidad, antes.</h2>
+      </div>
+      <p>Mi experiencia anterior explica buena parte de cómo trabajo hoy: priorizar, organizar, resolver y responder por el resultado.</p>
     </div>
 
-    <div class="career-flow">
-      <article>
-        <time>2009—2014</time>
-        <div><h3>Can Prat Restaurante</h3><b>Encargado de sala</b><p>Planificación, servicio, eventos, equipos y stock.</p></div>
-      </article>
-      <article>
-        <time>2014—2017</time>
-        <div><h3>Sis Sentits Restaurante</h3><b>Encargado de sala</b><p>Coordinación, horarios, stock, marketing y experiencia cliente.</p></div>
-      </article>
-      <article>
-        <time>2017—2022</time>
-        <div><h3>Código 14 Gastrobar</h3><b>Empresario / socio trabajador</b><p>Costes, operaciones, equipos, stock, marketing y decisiones de negocio.</p></div>
-      </article>
-      <article class="career-now">
-        <time>AHORA</time>
-        <div><h3>Technology Builder</h3><b>Formación aplicada mediante proyectos propios</b><p>Sistemas, automatización, IA, producto y aprendizaje continuo.</p></div>
-      </article>
+    <div class="timeline">
+      <article><time>2009—2014</time><div><h3>Can Prat Restaurante</h3><span>Encargado de sala</span><p>Servicio, planificación, eventos, equipos y stock.</p></div></article>
+      <article><time>2014—2017</time><div><h3>Sis Sentits Restaurante</h3><span>Encargado de sala</span><p>Coordinación, horarios, stock y experiencia de cliente.</p></div></article>
+      <article><time>2017—2022</time><div><h3>Código 14 Gastrobar</h3><span>Empresario / socio trabajador</span><p>Costes, operaciones, equipos, stock, marketing y decisiones de negocio.</p></div></article>
+      <article class="timeline-now"><time>AHORA</time><div><h3>Proyectos tecnológicos independientes</h3><span>Formación aplicada</span><p>Sistemas, automatización, IA y producto construidos a partir de problemas reales.</p></div></article>
     </div>
   </div>
 </section>
 
-<section class="section-v2 final-statement">
-  <div class="wrap final-inner">
-    <span class="final-number">06</span>
+<section class="section ai-section">
+  <div class="shell ai-panel">
     <div>
-      <span class="final-overline">OBJETIVO PROFESIONAL</span>
-      <h2>No busco que me contraten porque ya lo sé todo.</h2>
-      <h3>Busco un equipo donde mi forma de aprender, construir y resolver pueda generar valor.</h3>
-      <p>Especialmente en Organización y Sistemas / IT, automatización, aplicaciones internas, integraciones, soporte avanzado, datos, eCommerce o IA aplicada.</p>
-      <div class="final-actions">
-        <a class="button-main" href="cv.html">Abrir CV</a>
-        <button class="button-quiet" id="recruiterOpen2" type="button">Vista 60 segundos</button>
-      </div>
+      <span class="section-index">05 · IA</span>
+      <h2>La uso mucho.<br>También sé dónde termina.</h2>
+    </div>
+    <div class="ai-copy">
+      <p>La IA me permite aprender, analizar, prototipar, programar, probar y documentar más rápido.</p>
+      <p>Pero no la utilizo como sustituto de responsabilidad. <strong>Defino el problema, decido los límites, valido resultados y asumo qué se despliega y qué no.</strong></p>
+      <div class="ai-line"><span>Problema</span><i></i><span>IA como copiloto</span><i></i><span>Criterio humano</span><i></i><span>Resultado validado</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section closing">
+  <div class="shell closing-inner">
+    <span class="section-index">06 · SIGUIENTE PASO</span>
+    <h2>No busco parecer que ya lo sé todo.</h2>
+    <h3>Busco una oportunidad donde pueda aprender rápido, trabajar con criterio y empezar aportando valor.</h3>
+    <p>Especialmente en Organización y Sistemas / IT, automatización, aplicaciones internas, integraciones, soporte avanzado, datos, eCommerce o IA aplicada.</p>
+    <div class="closing-actions">
+      <a href="cv.html" class="btn primary">Ver CV</a>
+      <button type="button" class="btn secondary" id="quickOpen2">Resumen en 60 segundos</button>
     </div>
   </div>
 </section>
 </main>
 
-<footer class="footer-v2">
-  <div class="wrap">
-    <span>Manu Ramos Delgado</span>
-    <span>NEGOCIO ↔ SISTEMAS ↔ AUTOMATIZACIÓN ↔ IA ↔ PRODUCTO</span>
-  </div>
+<footer>
+  <div class="shell footer-inner"><span>Manu Ramos Delgado</span><span>Portfolio profesional · 2026</span></div>
 </footer>
 
-<div class="recruiter-overlay" id="recruiterOverlay" aria-hidden="true">
-  <div class="recruiter-panel" role="dialog" aria-modal="true" aria-labelledby="recruiterTitle">
-    <button class="recruiter-close" id="recruiterClose" type="button" aria-label="Cerrar">×</button>
-    <div class="recruiter-header">
-      <span>VISTA 60 SEGUNDOS</span>
-      <h2 id="recruiterTitle">Manu Ramos Delgado</h2>
-      <p>Perfil tecnológico multidisciplinar · Sistemas · Automatización · IA aplicada</p>
+<div class="quick-overlay" id="quickOverlay" aria-hidden="true">
+  <section class="quick-panel" role="dialog" aria-modal="true" aria-labelledby="quickTitle">
+    <button class="quick-close" id="quickClose" type="button" aria-label="Cerrar">×</button>
+    <div class="quick-head"><span>SI SOLO TIENES 60 SEGUNDOS</span><h2 id="quickTitle">Esto es lo importante.</h2></div>
+    <div class="quick-grid">
+      <article><span>01</span><h3>Vengo de negocio real.</h3><p>Equipos, costes, stock, clientes y operación diaria.</p></article>
+      <article><span>02</span><h3>He aprendido construyendo.</h3><p>Sistemas, APIs, bases de datos, frontend, automatización e IA aplicada.</p></article>
+      <article><span>03</span><h3>Mi valor está en conectar piezas.</h3><p>Entender el problema, escoger herramientas y llevar una solución hasta algo usable y verificable.</p></article>
+      <article><span>04</span><h3>No inflo el perfil.</h3><p>No me presento como senior ni experto en tecnologías que no pueda defender.</p></article>
     </div>
-    <div class="recruiter-content">
-      <section>
-        <span>POR QUÉ PODRÍA ENCAJAR</span>
-        <h3>Combino visión de negocio con capacidad técnica práctica.</h3>
-        <p>Vengo de operaciones reales y he construido una formación tecnológica basada en resolver problemas y desplegar proyectos propios.</p>
-      </section>
-      <section>
-        <span>QUÉ PUEDO APORTAR</span>
-        <div class="quick-tags"><b>Automatización</b><b>Integraciones</b><b>Sistemas</b><b>IA aplicada</b><b>Datos</b><b>Producto</b></div>
-      </section>
-      <section>
-        <span>CÓMO TRABAJO</span>
-        <p>Entender → separar → decidir → construir → validar → mejorar.</p>
-      </section>
-      <section>
-        <span>EVIDENCIA</span>
-        <p>SmartCompra · MIL IAgentes · MIL Trader · CALMA World · Home Automation.</p>
-      </section>
-      <section>
-        <span>LO QUE NO PRETENDO</span>
-        <p>No me presento como senior, ingeniero ni experto en tecnologías que no pueda defender. Uso IA intensivamente, pero mantengo criterio y control.</p>
-      </section>
-      <section>
-        <span>OBJETIVO</span>
-        <p>Entrar en un equipo de Sistemas / IT, aprender su entorno y empezar aportando valor en automatización, aplicaciones, integraciones, soporte, datos o IA aplicada.</p>
-      </section>
-    </div>
-    <div class="recruiter-actions">
-      <a href="cv.html" class="button-main">Ver CV</a>
-      <a href="#pruebas" class="button-quiet" id="recruiterEvidence">Ver evidencia</a>
-    </div>
-  </div>
+    <div class="quick-footer"><a href="cv.html" class="btn primary">Abrir CV</a><a href="#evidencia" class="btn secondary" id="quickEvidence">Ver evidencia</a></div>
+  </section>
 </div>
 
-<script src="app-v2.js"></script>
+<script src="app-v3.js"></script>
 </body>
 </html>
