@@ -1,5 +1,5 @@
 /* V4.2 — AI emphasis + applied reach */
-.capability-index article:nth-child(4){
+.capability-index article.capability-primary{
   position:relative;
   margin:10px 0;
   padding:24px 20px;
@@ -8,7 +8,7 @@
   background:linear-gradient(110deg,rgba(231,239,233,.88),rgba(255,255,255,.4));
   overflow:hidden;
 }
-.capability-index article:nth-child(4)::after{
+.capability-index article.capability-primary::after{
   content:"";
   position:absolute;
   width:180px;height:180px;border-radius:50%;
@@ -16,7 +16,7 @@
   background:radial-gradient(circle,rgba(95,125,114,.18),transparent 68%);
   pointer-events:none;
 }
-.capability-index article:nth-child(4) .cap-num{color:#4f7567}
+.capability-index article.capability-primary .cap-num{color:#4f7567}
 
 .ai-box{
   grid-template-columns:.72fr .9fr 1.38fr;

@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="styles-v4.css">
 <link rel="stylesheet" href="styles-v4.1.css">
 <link rel="stylesheet" href="styles-v4.2.css">
+<link rel="stylesheet" href="styles-v4.3.css">
 <link rel="stylesheet" href="assistant-widget-v4.css">
 <link rel="stylesheet" href="assistant-widget-v4.1.css">
 <link rel="stylesheet" href="assistant-widget-v4.2.css">
@@ -45,11 +46,12 @@
   <div class="shell header-inner">
     <a class="identity" href="#top">
       <span class="identity-mark">MR</span>
-      <span><b>Manu Ramos Delgado</b><small>Sistemas · Automatización · IA aplicada</small></span>
+      <span><b>Manu Ramos Delgado</b><small>IA aplicada · Automatización · Sistemas</small></span>
     </a>
     <nav class="main-nav" aria-label="Principal">
       <a href="#perfil">Perfil</a>
       <a href="#capacidades">Capacidades</a>
+      <a href="#ia">IA</a>
       <a href="#trabajo">Trabajo</a>
       <a href="#trayectoria">Trayectoria</a>
     </nav>
@@ -72,12 +74,12 @@
       <p class="hero-lead">En los últimos años he desarrollado proyectos propios de software, automatización y producto digital, trabajando de forma práctica con sistemas, datos e inteligencia artificial.</p>
       <div class="hero-actions">
         <a href="#perfil" class="button primary">Conocer el perfil</a>
-        <a href="cv.html" class="button ghost">Ver currículum</a>
+        <a href="Manu_Ramos_Delgado_CV.pdf" class="button ghost" download>Descargar CV PDF</a>
       </div>
 
       <div class="hero-note">
         <span>Sobre mi recorrido</span>
-        <strong>No vengo del camino informático tradicional. He aprendido construyendo, probando y corrigiendo.</strong>
+        <strong>La informática y las nuevas tecnologías siempre me han acompañado. En los últimos años he convertido esa curiosidad en aprendizaje práctico sobre IA, automatización, software, datos, producto y marketing digital.</strong>
       </div>
     </div>
 
@@ -93,7 +95,7 @@
         </li>
         <li>
           <span>02</span>
-          <div><b>Elegir una solución proporcionada.</b><p>No añadir complejidad si una opción más simple resuelve el problema.</p></div>
+          <div><b>Elegir una solución proporcionada.</b><p>Añadir complejidad solo cuando aporta valor al resultado.</p></div>
         </li>
         <li>
           <span>03</span>
@@ -121,7 +123,10 @@
     <div class="section-intro sticky">
       <span class="section-label">01 · PERFIL</span>
       <h2>Cómo trabajo.</h2>
-      <p>Intento entender bien el problema, reducirlo a piezas manejables y comprobar el resultado antes de ampliar la solución.</p>
+      <p>Me gusta entender bien el problema, reducirlo a piezas manejables y comprobar el resultado antes de ampliar la solución.</p>
+      <figure class="profile-portrait" data-reveal>
+        <img src="assets/manu-profile.webp" alt="Retrato profesional de Manu Ramos Delgado" loading="lazy">
+      </figure>
     </div>
 
     <div class="profile-copy">
@@ -143,6 +148,21 @@
       </article>
     </div>
   </div>
+
+  <div class="shell people-strengths" data-reveal>
+    <div class="people-strengths-head">
+      <span class="section-label">CÓMO APORTO EN EQUIPO</span>
+      <p>Además de la parte técnica, hay una forma de trabajar que intento llevar a cualquier proyecto.</p>
+    </div>
+    <div class="people-strengths-grid">
+      <article><b>Aprendizaje rápido</b><p>Cuando necesito un concepto o una tecnología nueva, me pongo con ello hasta entenderlo y poder aplicarlo.</p></article>
+      <article><b>Proactividad</b><p>Me gusta proponer, probar y avanzar; no esperar a que una idea se resuelva sola.</p></article>
+      <article><b>Trabajo en equipo</b><p>Disfruto contrastando ideas, escuchando otros enfoques y construyendo sobre ellos.</p></article>
+      <article><b>Gestión y organización</b><p>Mi experiencia en operaciones me ha enseñado a priorizar, coordinar y mantener el foco.</p></article>
+      <article><b>Conectar ideas</b><p>Me gusta asociar piezas de ámbitos distintos y convertirlas en soluciones que puedan probarse.</p></article>
+      <article><b>Curiosidad y mejora</b><p>Disfruto con lo que hago y siempre busco entender qué puede hacerse mejor.</p></article>
+    </div>
+  </div>
 </section>
 
 <section class="section capabilities-section" id="capacidades">
@@ -152,15 +172,15 @@
         <span class="section-label">02 · CAPACIDADES</span>
         <h2>Áreas en las que ya he trabajado.</h2>
       </div>
-      <p>Experiencia práctica desarrollada en proyectos propios. No pretende sustituir experiencia corporativa que todavía no tengo.</p>
+      <p>Experiencia práctica desarrollada y validada mediante proyectos propios.</p>
     </div>
 
     <div class="capability-index">
-      <article>
+      <article class="capability-primary">
         <span class="cap-num">01</span>
-        <h3>Sistemas</h3>
-        <p>Windows, servicios, VPS, Docker, logs, health checks y troubleshooting.</p>
-        <div>Windows · Docker · VPS · Servicios</div>
+        <h3>IA aplicada</h3>
+        <p>LLM locales, agentes y NLP integrados dentro de productos y procesos.</p>
+        <div>LLM · Ollama · Agentes · NLP</div>
       </article>
       <article>
         <span class="cap-num">02</span>
@@ -176,15 +196,15 @@
       </article>
       <article>
         <span class="cap-num">04</span>
-        <h3>IA aplicada</h3>
-        <p>LLM locales, agentes y NLP integrados dentro de productos y procesos.</p>
-        <div>LLM · Ollama · Agentes · NLP</div>
-      </article>
-      <article>
-        <span class="cap-num">05</span>
         <h3>Producto digital</h3>
         <p>Interfaces web, PWA, mobile-first, prototipado e iteración centrada en usuario.</p>
         <div>React · TypeScript · Vite · PWA</div>
+      </article>
+      <article>
+        <span class="cap-num">05</span>
+        <h3>Sistemas e infraestructura</h3>
+        <p>Windows, servicios, VPS, Docker, logs, health checks y troubleshooting.</p>
+        <div>Windows · Docker · VPS · Servicios</div>
       </article>
       <article>
         <span class="cap-num">06</span>
@@ -196,11 +216,36 @@
   </div>
 </section>
 
+<section class="section ai-section" id="ia">
+  <div class="shell ai-box">
+    <div>
+      <span class="section-label">03 · IA</span>
+      <h2>Cómo utilizo la IA.</h2>
+    </div>
+    <div class="ai-text">
+      <p>La utilizo para acelerar análisis, aprendizaje, desarrollo, pruebas y documentación.</p>
+      <p><strong>Las decisiones sobre el problema, los límites, la validación y lo que se despliega siguen siendo responsabilidad mía.</strong></p>
+    </div>
+    <div class="ai-visual" aria-label="Áreas en las que aplico inteligencia artificial">
+      <div class="ai-grid-bg" aria-hidden="true"></div>
+      <div class="ai-core"><span>IA</span><small>capa transversal</small></div>
+      <div class="ai-orbit ai-orbit-1" aria-hidden="true"></div>
+      <div class="ai-orbit ai-orbit-2" aria-hidden="true"></div>
+      <div class="ai-node ai-node-1"><b>Agentes</b><small>interacción</small></div>
+      <div class="ai-node ai-node-2"><b>Datos</b><small>contexto</small></div>
+      <div class="ai-node ai-node-3"><b>Automatización</b><small>procesos</small></div>
+      <div class="ai-node ai-node-4"><b>Producto</b><small>experiencia</small></div>
+      <div class="ai-node ai-node-5"><b>Análisis</b><small>decisiones</small></div>
+      <div class="ai-node ai-node-6"><b>Validación</b><small>control</small></div>
+    </div>
+  </div>
+</section>
+
 <section class="section work-section" id="trabajo">
   <div class="shell">
     <div class="section-head work-head">
       <div>
-        <span class="section-label">03 · TRABAJO</span>
+        <span class="section-label">04 · TRABAJO</span>
         <h2>Una muestra de proyectos.</h2>
       </div>
       <p>Tres ejemplos para enseñar cómo aplico sistemas, producto e IA. Los detalles técnicos quedan en cada caso.</p>
@@ -211,7 +256,7 @@
         <img src="assets/smartcompra-ui.png" alt="Interfaz de SmartCompra mostrando el comparador de cesta y buscador de productos" loading="lazy">
       </figure>
       <div class="project-copy">
-        <div class="project-meta"><span>01</span><span>RETAIL · IA · PRODUCTO</span></div>
+        <div class="project-meta"><span>01</span><span>RETAIL · IA · PRODUCTO · LIVE</span></div>
         <h3>SmartCompra</h3>
         <p>Asistente de compras orientado a comparar productos, precios y cestas con una experiencia sencilla.</p>
         <a href="project-smartcompra.html">Ver proyecto <span>↗</span></a>
@@ -224,7 +269,7 @@
           <img src="assets/iagentes-web.png" alt="Web de demostración de MIL IAgentes" loading="lazy">
         </figure>
         <div class="project-copy">
-          <div class="project-meta"><span>02</span><span>AGENTES · SISTEMAS</span></div>
+          <div class="project-meta"><span>02</span><span>AGENTES · SISTEMAS · DEMO</span></div>
           <h3>MIL IAgentes</h3>
           <p>Plataforma de agentes y citas diseñada con foco en consistencia, pruebas y preparación antes del go-live.</p>
           <a href="project-iagentes.html">Ver proyecto <span>↗</span></a>
@@ -236,7 +281,7 @@
           <img src="assets/calma-ui.png" alt="Interfaz móvil de CALMA World" loading="lazy">
         </figure>
         <div class="project-copy">
-          <div class="project-meta"><span>03</span><span>UX · PRODUCTO</span></div>
+          <div class="project-meta"><span>03</span><span>UX · PRODUCTO · PROTOTIPO</span></div>
           <h3>CALMA World</h3>
           <p>Producto interactivo centrado en frontend, experiencia de usuario e iteración visual.</p>
           <a href="project-calma.html">Ver proyecto <span>↗</span></a>
@@ -254,7 +299,7 @@
 <section class="section trajectory-section" id="trayectoria">
   <div class="shell editorial-split trajectory-grid">
     <div class="section-intro sticky">
-      <span class="section-label">04 · TRAYECTORIA</span>
+      <span class="section-label">05 · TRAYECTORIA</span>
       <h2>Experiencia anterior.</h2>
       <p>Antes de centrarme en tecnología trabajé en operaciones, equipos, servicio y gestión de negocio.</p>
     </div>
@@ -280,35 +325,12 @@
   </div>
 </section>
 
-<section class="section ai-section" id="ia">
-  <div class="shell ai-box">
-    <div>
-      <span class="section-label">05 · IA</span>
-      <h2>Cómo utilizo la IA.</h2>
-    </div>
-    <div class="ai-text">
-      <p>La utilizo para acelerar análisis, aprendizaje, desarrollo, pruebas y documentación.</p>
-      <p><strong>Las decisiones sobre el problema, los límites, la validación y lo que se despliega siguen siendo responsabilidad mía.</strong></p>
-    </div>
-    <div class="ai-visual" aria-label="Áreas en las que aplico inteligencia artificial">
-      <div class="ai-grid-bg" aria-hidden="true"></div>
-      <div class="ai-core"><span>IA</span><small>capa transversal</small></div>
-      <div class="ai-orbit ai-orbit-1" aria-hidden="true"></div>
-      <div class="ai-orbit ai-orbit-2" aria-hidden="true"></div>
-      <div class="ai-node ai-node-1"><b>Agentes</b><small>interacción</small></div>
-      <div class="ai-node ai-node-2"><b>Datos</b><small>contexto</small></div>
-      <div class="ai-node ai-node-3"><b>Automatización</b><small>procesos</small></div>
-      <div class="ai-node ai-node-4"><b>Producto</b><small>experiencia</small></div>
-      <div class="ai-node ai-node-5"><b>Análisis</b><small>decisiones</small></div>
-      <div class="ai-node ai-node-6"><b>Validación</b><small>control</small></div>
-    </div>
-  </div>
-</section>
+
 
 <section class="section reach-section" id="publicacion">
   <div class="shell">
     <div class="reach-head">
-      <span class="section-label">PUBLICACIÓN · ADS</span>
+      <span class="section-label">06 · PUBLICACIÓN / ADS</span>
       <div class="reach-line" aria-hidden="true"></div>
     </div>
     <div class="reach-grid">
@@ -318,15 +340,16 @@
           <h3>Publicidad digital / Ads</h3>
           <p>También he trabajado con campañas de publicidad digital en proyectos propios.</p>
         </div>
-        <div class="ads-graphic" aria-hidden="true">
-          <div class="ads-axis"></div>
-          <span style="--h:34%;--d:0"></span>
-          <span style="--h:52%;--d:1"></span>
-          <span style="--h:45%;--d:2"></span>
-          <span style="--h:71%;--d:3"></span>
-          <span style="--h:62%;--d:4"></span>
-          <span style="--h:86%;--d:5"></span>
-          <i class="ads-trend"></i>
+        <div class="ads-flow" aria-hidden="true">
+          <span><b>Idea</b><small>mensaje</small></span>
+          <i>→</i>
+          <span><b>Audiencia</b><small>segmentación</small></span>
+          <i>→</i>
+          <span><b>Campaña</b><small>activación</small></span>
+          <i>→</i>
+          <span><b>Medición</b><small>datos</small></span>
+          <i>→</i>
+          <span><b>Iteración</b><small>mejora</small></span>
         </div>
       </article>
 
@@ -352,13 +375,13 @@
 
 <section class="section closing-section">
   <div class="shell closing">
-    <span class="section-label">06 · OBJETIVO</span>
+    <span class="section-label">07 · OBJETIVO</span>
     <h2>Qué busco ahora.</h2>
-    <h3>Incorporarme a un equipo de tecnología donde pueda seguir aprendiendo y aportar desde la práctica.</h3>
-    <p>Me interesan especialmente sistemas, automatización, aplicaciones internas, integraciones, soporte avanzado, datos, eCommerce e IA aplicada.</p>
+    <h3>Me gustaría formar parte de un equipo IT donde seguir desarrollando mis habilidades, trabajar en proyectos reales y aportar a la optimización de procesos mediante nuevas tecnologías.</h3>
+    <p>Aprendo rápido, disfruto con lo que hago y me gusta combinar mis ideas con las de otras personas hasta convertirlas en soluciones útiles. Me interesan especialmente IA aplicada, automatización, integraciones, herramientas internas, datos, eCommerce, sistemas y soporte avanzado.</p>
     <div class="closing-actions">
-      <a href="cv.html" class="button primary">Abrir currículum</a>
-      <button type="button" class="button ghost" id="quickOpen2">Ver resumen</button>
+      <a href="Manu_Ramos_Delgado_CV.pdf" class="button primary" download>Descargar CV PDF</a>
+      <a href="cv.html" class="button ghost">Currículum web</a>
     </div>
 
     <div class="contact-block">
@@ -375,24 +398,6 @@
     <span>Portfolio profesional · 2026</span>
   </div>
 </footer>
-
-<div class="quick-overlay" id="quickOverlay" aria-hidden="true">
-  <section class="quick-panel" role="dialog" aria-modal="true" aria-labelledby="quickTitle">
-    <button class="quick-close" id="quickClose" type="button" aria-label="Cerrar">×</button>
-    <span class="quick-kicker">RESUMEN</span>
-    <h2 id="quickTitle">Perfil en un minuto.</h2>
-    <div class="quick-grid">
-      <article><span>01</span><h3>Trayectoria</h3><p>Experiencia previa en operaciones, equipos, costes, stock y atención al cliente.</p></article>
-      <article><span>02</span><h3>Formación práctica</h3><p>Proyectos propios de sistemas, APIs, bases de datos, frontend, automatización e IA aplicada.</p></article>
-      <article><span>03</span><h3>Forma de trabajo</h3><p>Entender, simplificar, construir, validar y mejorar.</p></article>
-      <article><span>04</span><h3>Límites claros</h3><p>No me presento como especialista en tecnologías o entornos que todavía no he trabajado de forma práctica.</p></article>
-    </div>
-    <div class="quick-actions">
-      <a href="cv.html" class="button primary">Abrir currículum</a>
-      <a href="#trabajo" class="button ghost" id="quickEvidence">Ver proyectos</a>
-    </div>
-  </section>
-</div>
 
 <button class="assistant-launcher" id="assistantLauncher" hidden type="button" aria-haspopup="dialog" aria-controls="assistantPanel">
   <span class="assistant-launcher-dot"></span>
