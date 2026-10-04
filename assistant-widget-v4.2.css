@@ -1,0 +1,70 @@
+/* V4.2 — professional assistant UI */
+.assistant-launcher{
+  min-width:244px;min-height:64px;right:24px;bottom:24px;padding:9px 12px;
+  border-radius:20px;background:rgba(249,248,244,.93);
+  border:1px solid rgba(93,108,100,.24);
+  box-shadow:0 20px 60px rgba(29,34,31,.18),inset 0 1px 0 rgba(255,255,255,.85);
+  backdrop-filter:blur(18px) saturate(1.2);
+  overflow:hidden
+}
+.assistant-launcher::before{
+  content:"AI";width:36px;height:36px;display:grid;place-items:center;flex:none;
+  border-radius:12px;background:linear-gradient(145deg,#1e2622,#0f1210);color:#fff;
+  font-size:9px;letter-spacing:.08em;font-weight:900;
+  box-shadow:0 7px 20px rgba(25,30,27,.18)
+}
+.assistant-launcher::after{
+  content:"";position:absolute;left:10px;right:10px;bottom:0;height:2px;
+  background:linear-gradient(90deg,transparent,#7aa18f 28%,#acc7bb 70%,transparent);
+  opacity:.8
+}
+.assistant-launcher-dot{position:absolute;width:7px;height:7px;left:40px;top:9px;border:2px solid #f7f5f0;background:#72a28c;box-shadow:0 0 0 3px rgba(114,162,140,.13)}
+.assistant-launcher-copy b{font-size:11px;font-weight:900}.assistant-launcher-copy small{font-size:8px;color:#717a75}
+.assistant-launcher-arrow{width:28px;height:28px;border-radius:50%;display:grid!important;place-items:center;background:#eceeea;color:#32443c;font-size:12px}
+
+.assistant-panel{
+  right:24px;bottom:100px;width:min(470px,calc(100vw - 32px));height:min(720px,calc(100vh - 124px));
+  border-radius:28px;background:rgba(249,248,244,.985);
+  border:1px solid rgba(83,98,90,.18);
+  box-shadow:0 38px 120px rgba(24,29,26,.24),0 0 0 1px rgba(255,255,255,.7) inset
+}
+.assistant-header{
+  position:relative;padding:24px 24px 21px;
+  background:
+    radial-gradient(circle at 90% 0%,rgba(116,157,139,.17),transparent 34%),
+    linear-gradient(180deg,rgba(255,255,255,.72),rgba(241,241,236,.52));
+}
+.assistant-header::after{content:"";position:absolute;left:24px;right:24px;bottom:0;height:1px;background:linear-gradient(90deg,#8da99b,transparent)}
+.assistant-overline{display:flex;align-items:center;gap:7px;font-size:7px;letter-spacing:.18em}
+.assistant-overline::before{content:"";width:7px;height:7px;border-radius:50%;background:#72a28c;box-shadow:0 0 0 4px rgba(114,162,140,.11)}
+.assistant-header h2{font-size:27px;line-height:1;letter-spacing:-.045em;margin:9px 0 0}
+.assistant-close{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.6);border:1px solid rgba(80,88,83,.12);display:grid;place-items:center;font-size:19px;line-height:1}
+.assistant-close:hover{background:#fff}
+.assistant-messages{padding:22px 20px 28px;background:linear-gradient(180deg,rgba(249,248,244,.2),rgba(244,243,238,.78))}
+.assistant-message .message-body{
+  background:rgba(255,255,255,.86);border:1px solid rgba(93,103,97,.12);
+  border-radius:7px 19px 19px 19px;padding:13px 14px;
+  box-shadow:0 9px 26px rgba(33,38,35,.045)
+}
+.user-message .message-body{background:#171b19;border-radius:19px 7px 19px 19px;box-shadow:0 10px 28px rgba(20,24,21,.13)}
+.message-body{font-size:12px;line-height:1.62}
+.welcome-message .message-body{background:linear-gradient(145deg,#edf2ee,#f7f6f1);border-color:#d8dfda}
+.assistant-compose{padding:13px 15px 15px;background:rgba(246,245,240,.94);border-top:1px solid rgba(83,98,90,.13)}
+.compose-box{
+  border-radius:19px;border:1px solid rgba(86,99,92,.18);padding:8px 8px 8px 10px;
+  box-shadow:0 7px 24px rgba(30,35,32,.05),0 0 0 1px rgba(255,255,255,.6) inset
+}
+.compose-box:focus-within{border-color:#7d9e8f;box-shadow:0 0 0 3px rgba(104,145,127,.08)}
+.compose-box textarea{font-size:12px;min-height:25px}
+.compose-box button{
+  width:36px;height:36px;background:linear-gradient(145deg,#26302b,#111512);
+  box-shadow:0 6px 16px rgba(24,29,26,.15)
+}
+.assistant-footnote{font-size:7px;color:#8f9691;margin-top:8px}
+.evidence-strip a,.evidence-strip span{background:#eef2ef;border-color:#d4ddd8}
+.assistant-contact-card{border-radius:18px;background:linear-gradient(145deg,#edf3ef,#f5f4ee)}
+@media(max-width:600px){
+  .assistant-launcher{right:12px;bottom:12px;min-width:218px;min-height:60px}
+  .assistant-panel{right:8px;bottom:82px;width:calc(100vw - 16px);height:min(78vh,720px);border-radius:24px}
+  .assistant-launcher span:last-child{display:grid}
+}

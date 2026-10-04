@@ -9,8 +9,10 @@
 <meta name="theme-color" content="#f4f1ea">
 <link rel="stylesheet" href="styles-v4.css">
 <link rel="stylesheet" href="styles-v4.1.css">
+<link rel="stylesheet" href="styles-v4.2.css">
 <link rel="stylesheet" href="assistant-widget-v4.css">
 <link rel="stylesheet" href="assistant-widget-v4.1.css">
+<link rel="stylesheet" href="assistant-widget-v4.2.css">
 </head>
 <body>
 <div class="paper-grain" aria-hidden="true"></div>
@@ -133,8 +135,8 @@
       <article>
         <span class="cap-num">01</span>
         <h3>Sistemas</h3>
-        <p>Linux, Windows, servicios, VPS, Docker, logs, health checks y troubleshooting.</p>
-        <div>Linux · Docker · VPS · Servicios</div>
+        <p>Windows, servicios, VPS, Docker, logs, health checks y troubleshooting.</p>
+        <div>Windows · Docker · VPS · Servicios</div>
       </article>
       <article>
         <span class="cap-num">02</span>
@@ -254,7 +256,7 @@
   </div>
 </section>
 
-<section class="section ai-section">
+<section class="section ai-section" id="ia">
   <div class="shell ai-box">
     <div>
       <span class="section-label">05 · IA</span>
@@ -263,6 +265,63 @@
     <div class="ai-text">
       <p>La utilizo para acelerar análisis, aprendizaje, desarrollo, pruebas y documentación.</p>
       <p><strong>Las decisiones sobre el problema, los límites, la validación y lo que se despliega siguen siendo responsabilidad mía.</strong></p>
+    </div>
+    <div class="ai-visual" aria-label="Áreas en las que aplico inteligencia artificial">
+      <div class="ai-grid-bg" aria-hidden="true"></div>
+      <div class="ai-core"><span>IA</span><small>capa transversal</small></div>
+      <div class="ai-orbit ai-orbit-1" aria-hidden="true"></div>
+      <div class="ai-orbit ai-orbit-2" aria-hidden="true"></div>
+      <div class="ai-node ai-node-1"><b>Agentes</b><small>interacción</small></div>
+      <div class="ai-node ai-node-2"><b>Datos</b><small>contexto</small></div>
+      <div class="ai-node ai-node-3"><b>Automatización</b><small>procesos</small></div>
+      <div class="ai-node ai-node-4"><b>Producto</b><small>experiencia</small></div>
+      <div class="ai-node ai-node-5"><b>Análisis</b><small>decisiones</small></div>
+      <div class="ai-node ai-node-6"><b>Validación</b><small>control</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reach-section" id="publicacion">
+  <div class="shell">
+    <div class="reach-head">
+      <span class="section-label">PUBLICACIÓN · ADS</span>
+      <div class="reach-line" aria-hidden="true"></div>
+    </div>
+    <div class="reach-grid">
+      <article class="reach-card ads-card" data-reveal>
+        <div class="reach-card-copy">
+          <span class="reach-index">01</span>
+          <h3>Publicidad digital / Ads</h3>
+          <p>También he trabajado con campañas de publicidad digital en proyectos propios.</p>
+        </div>
+        <div class="ads-graphic" aria-hidden="true">
+          <div class="ads-axis"></div>
+          <span style="--h:34%;--d:0"></span>
+          <span style="--h:52%;--d:1"></span>
+          <span style="--h:45%;--d:2"></span>
+          <span style="--h:71%;--d:3"></span>
+          <span style="--h:62%;--d:4"></span>
+          <span style="--h:86%;--d:5"></span>
+          <i class="ads-trend"></i>
+        </div>
+      </article>
+
+      <a class="reach-card kdp-card" href="https://www.amazon.es/ChatGPT-SIN-L%C3%8DMITES-potente-complicaciones/dp/B0F3WXFQWN/" target="_blank" rel="noopener" data-reveal>
+        <div class="book-graphic" aria-hidden="true">
+          <div class="book-spine"></div>
+          <div class="book-cover">
+            <small>MANUEL RAMOS</small>
+            <strong>ChatGPT<br>SIN LÍMITES</strong>
+            <span>IA · guía práctica</span>
+          </div>
+        </div>
+        <div class="reach-card-copy">
+          <span class="reach-index">02</span>
+          <h3>Amazon KDP</h3>
+          <p>Publicación independiente: <em>ChatGPT SIN LÍMITES</em>, publicado como Manuel Ramos.</p>
+          <span class="reach-link">Ver publicación ↗</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -322,7 +381,6 @@
     <div>
       <span class="assistant-overline">ASISTENTE DE MANU</span>
       <h2 id="assistantTitle">Pregunta lo que necesites.</h2>
-      <p>Puede ayudarte con experiencia, capacidades, proyectos o encaje con una vacante.</p>
     </div>
     <button class="assistant-close" id="assistantClose" type="button" aria-label="Cerrar">×</button>
   </header>
