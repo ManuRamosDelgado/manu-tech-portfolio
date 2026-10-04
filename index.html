@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio tecnológico de Manu Ramos Delgado: sistemas, automatización, IA aplicada y producto digital.">
+<title>Manu Ramos Delgado — Sistemas · Automatización · IA aplicada</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="#"><span class="brand-mark">MR</span><span><b>Manu Ramos Delgado</b><small>Technology & Automation Builder</small></span></a>
+    <div class="nav-links">
+      <a href="#proyectos">Proyectos</a><a href="#stack">Stack</a><a href="#trayectoria">Trayectoria</a><a href="#sirena">La Sirena</a>
+      <a class="btn nav-cta" href="dashboard.html">Dashboard público</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">Sistemas · Automatización · IA aplicada · Producto digital</div>
+    <h1>No llegué a tecnología por el camino tradicional. <span class="gradient">Llegué construyendo.</span></h1>
+    <p>Construyo, integro y valido soluciones digitales completas: desde la idea y la arquitectura hasta el despliegue, los controles de seguridad, el testing y la operación.</p>
+    <p class="sub">Perfil autodidacta, con experiencia previa real en operaciones, equipos, costes, stock y atención al cliente. Busco una oportunidad en Organización y Sistemas / IT donde pueda aprender el entorno corporativo y aportar capacidad de ejecución.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#proyectos">Ver proyectos</a>
+      <a class="btn" href="cv.html">Ver CV web</a>
+      <a class="btn" href="dashboard.html">Abrir dashboard</a>
+    </div>
+  </div>
+  <aside class="hero-side">
+    <div class="signal"><div class="status"><span class="dot"></span>Candidatura orientada a Organización y Sistemas / IT</div><strong>5</strong><span>casos técnicos seleccionados</span></div>
+    <div class="signal"><strong>516/516</strong><span>regresión global documentada en MIL IAgentes</span></div>
+    <div class="signal"><strong>66/66</strong><span>tests app + Solidity validados en MIL Trader (04/10/2026)</span></div>
+    <div class="signal"><strong>10/10</strong><span>tests web/API de CALMA + build de producción (04/10/2026)</span></div>
+  </aside>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Evidencia práctica</div><h2>Proyectos seleccionados</h2></div><p>No son ejercicios de curso. Son sistemas que obligan a tomar decisiones sobre arquitectura, datos, despliegue, errores, seguridad y experiencia de usuario.</p></div>
+    <div class="grid">
+      <article class="card project flagship">
+        <div class="project-top"><div><div class="kicker">Flagship retail · Commerce AI</div><h3>SmartCompra</h3></div><span class="pill green">GREEN + LIVE</span></div>
+        <p>Asistente inteligente orientado inicialmente a la compra de supermercado. Evoluciona hacia una arquitectura desacoplada donde Telegram, Web/PWA y futuros clientes consumen un núcleo central.</p>
+        <p class="why"><b>Por qué es relevante para retail:</b> comparación de producto, normalización, equivalencias, pricing, cesta, OCR/EAN, experiencia conversacional, eCommerce y automatización.</p>
+        <div class="chips"><span class="chip">Docker</span><span class="chip">Debian / VPS</span><span class="chip">Ollama</span><span class="chip">PWA</span><span class="chip">Telegram</span><span class="chip">OCR / EAN</span><span class="chip">Product Matching</span><span class="chip">Price & Basket Engine</span></div>
+        <div class="arch">
+          <div class="kicker">Arquitectura simplificada</div>
+          <div class="arch-row">
+            <div class="node"><b>Clientes</b><small>Telegram · Web/PWA</small></div><div class="arrow">→</div>
+            <div class="node"><b>SmartCompra Core</b><small>intención · matching · cesta · recomendaciones</small></div><div class="arrow">→</div>
+            <div class="node"><b>Datos / Servicios</b><small>precios · OCR/EAN · LLM local · proveedores</small></div>
+          </div>
+        </div>
+        <div class="metric-row"><div class="metric"><b>LIVE</b><span>servicio documentado saludable</span></div><div class="metric"><b>0</b><span>vulnerabilidades en snapshot</span></div><div class="metric"><b>HTTP 200</b><span>marketplace público en snapshot</span></div></div>
+        <a class="link" href="project-smartcompra.html">Abrir caso de estudio →</a>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><div><div class="kicker">Voice AI · Reliability</div><h3>MIL IAgentes</h3></div><span class="pill cyan">Synthetic-only</span></div>
+        <p>Plataforma de agentes inteligentes para voz, citas y operaciones posteriores al servicio. La parte interesante no es el chatbot: son las garantías alrededor de datos, consistencia y go-live.</p>
+        <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">RLS</span><span class="chip">Idempotencia</span><span class="chip">Outbox</span><span class="chip">React/Vite</span><span class="chip">Testing</span></div>
+        <div class="metric-row"><div class="metric"><b>516/516</b><span>regresión global snapshot</span></div><div class="metric"><b>6</b><span>workspaces TypeScript limpios</span></div><div class="metric"><b>0</b><span>npm audit snapshot</span></div></div>
+        <a class="link" href="project-iagentes.html">Abrir caso de estudio →</a>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><div><div class="kicker">Research · Risk Engineering</div><h3>MIL Trader</h3></div><span class="pill amber">Execution locked</span></div>
+        <p>Sistema experimental de investigación de oportunidades. Se presenta como ingeniería de datos, simulación y control de riesgo: la ejecución real permanece bloqueada mientras no exista evidencia estadística suficiente.</p>
+        <div class="chips"><span class="chip">TypeScript</span><span class="chip">Pipelines</span><span class="chip">Shadow Mode</span><span class="chip">Risk Gates</span><span class="chip">Circuit Breaker</span><span class="chip">Solidity</span></div>
+        <div class="metric-row"><div class="metric"><b>56/56</b><span>tests app PASS</span></div><div class="metric"><b>10/10</b><span>tests Solidity PASS</span></div><div class="metric"><b>0</b><span>autoridad financiera IA</span></div></div>
+        <a class="link" href="project-trader.html">Abrir caso de estudio →</a>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><div><div class="kicker">Product · UX · WebGL</div><h3>CALMA World</h3></div><span class="pill violet">Build PASS</span></div>
+        <p>Producto digital centrado en experiencia y progresión sin presión. Demuestra iteración de producto, frontend, accesibilidad, pruebas y evolución visual.</p>
+        <div class="chips"><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Vite 8</span><span class="chip">PixiJS 8</span><span class="chip">WebGL</span><span class="chip">Vitest</span></div>
+        <div class="metric-row"><div class="metric"><b>8/8</b><span>tests web PASS</span></div><div class="metric"><b>2/2</b><span>tests API PASS</span></div><div class="metric"><b>PASS</b><span>build producción</span></div></div>
+        <a class="link" href="project-calma.html">Abrir caso de estudio →</a>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><div><div class="kicker">Automation Lab</div><h3>MIL House / Home Automation</h3></div><span class="pill amber">CANARY</span></div>
+        <p>Laboratorio de automatización física con Home Assistant, sensores y lógica condicional. El foco público está en troubleshooting, seguridad operacional y aceptación antes de despliegue.</p>
+        <div class="chips"><span class="chip">Home Assistant</span><span class="chip">Zigbee</span><span class="chip">Automatización</span><span class="chip">Acceptance Gates</span><span class="chip">Backups</span></div>
+        <div class="metric-row"><div class="metric"><b>A→D</b><span>acceptance gate</span></div><div class="metric"><b>CANARY</b><span>estado controlado</span></div><div class="metric"><b>0</b><span>estados inventados permitidos</span></div></div>
+        <a class="link" href="project-house.html">Abrir caso de estudio →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Mapa técnico</div><h2>Lo que utilizo de verdad</h2></div><p>Las barras expresan frecuencia y autonomía práctica, no un porcentaje de “expertise”.</p></div>
+    <div class="grid">
+      <div class="card stack-group"><div class="eyebrow">Infraestructura</div><h3>Sistemas & operación</h3>
+        <div class="skill"><div class="skill-top"><span>Windows / terminal / servicios</span><span>Uso habitual</span></div><div class="bar"><div class="fill" style="width:86%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>Docker / Compose</span><span>Uso habitual</span></div><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>Linux / Debian / VPS</span><span>Implementación práctica</span></div><div class="bar"><div class="fill" style="width:72%"></div></div></div>
+      </div>
+      <div class="card stack-group"><div class="eyebrow">Datos & backend</div><h3>Servicios e integración</h3>
+        <div class="skill"><div class="skill-top"><span>APIs / servicios</span><span>Uso habitual</span></div><div class="bar"><div class="fill" style="width:84%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>PostgreSQL / SQL</span><span>Implementación práctica</span></div><div class="bar"><div class="fill" style="width:72%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>RLS · idempotencia · Outbox</span><span>Aplicado en proyecto</span></div><div class="bar"><div class="fill" style="width:66%"></div></div></div>
+      </div>
+      <div class="card stack-group"><div class="eyebrow">Frontend & IA</div><h3>Producto digital</h3>
+        <div class="skill"><div class="skill-top"><span>React / Vite / TypeScript</span><span>Uso habitual</span></div><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>LLM / Ollama / agentes</span><span>Uso habitual</span></div><div class="bar"><div class="fill" style="width:86%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>PWA / mobile-first</span><span>Implementación práctica</span></div><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+      </div>
+
+      <div class="card thinking"><div class="eyebrow">Capacidad</div><h3>Arquitectura</h3><p>Separar interfaz, lógica, datos, infraestructura y proveedores externos para reducir acoplamiento y poder validar cada parte.</p></div>
+      <div class="card thinking"><div class="eyebrow">Capacidad</div><h3>Fiabilidad</h3><p>Testing, idempotencia, estados explícitos, gates, health checks y prevención de pasos irreversibles sin evidencia.</p></div>
+      <div class="card thinking"><div class="eyebrow">Capacidad</div><h3>Producto</h3><p>Relacionar decisiones técnicas con negocio y usuario. No construir tecnología solo porque sea técnicamente interesante.</p></div>
+
+      <div class="card ai-box">
+        <div><div class="eyebrow">AI-Augmented Engineering</div><h2 style="margin:6px 0 10px">La IA es copiloto, no coartada.</h2><p style="color:var(--muted)">Uso IA de forma intensiva para acelerar trabajo, pero conservo la definición de objetivos, arquitectura, priorización, aceptación/rechazo, testing y decisión de despliegue. No afirmo haber escrito manualmente cada línea de código.</p></div>
+        <div class="cycle"><span>DISEÑO</span><span>ARQUITECTURA</span><span>DESARROLLO</span><span>TESTING</span><span>DOCUMENTACIÓN</span><span>OPERACIÓN</span><span>DEBUGGING</span><span>MEJORA</span><span>CONTROL</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trayectoria">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Antes de la tecnología</div><h2>Operaciones reales también cuentan</h2></div><p>Mi experiencia profesional anterior explica por qué me interesan los sistemas que hacen funcionar un negocio, no solo el código.</p></div>
+    <div class="timeline">
+      <div class="job"><div class="date">2017–2022</div><div><h3>Código 14 Gastrobar — Empresario / socio trabajador</h3><p>Contabilidad, control de costes, marketing y RRSS, equipos y horarios, stock y organización de eventos. Equipo de 1–8 personas.</p></div></div>
+      <div class="job"><div class="date">2014–2017</div><div><h3>Sis Sentits Restaurante — Encargado de sala</h3><p>Organización de equipo y horarios, control de stock, RRSS y marketing básico. Equipo de hasta 15 personas.</p></div></div>
+      <div class="job"><div class="date">2009–2014</div><div><h3>Can Prat Restaurante — Encargado de sala</h3><p>Organización de equipo, planificación de jornadas, eventos, supervisión de servicio y stock. Equipo de hasta 15 personas.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sirena">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Candidatura específica</div><h2>¿Qué podría aportar a La Sirena?</h2></div><p>Sin hacer suposiciones sobre sistemas que no conozco, sí puedo señalar dónde encajan mejor mis capacidades.</p></div>
+    <div class="grid">
+      <div class="card fit"><h3>Áreas donde podría aportar</h3><ul>
+        <li>Automatización de procesos internos y tareas repetitivas.</li><li>Herramientas para empleados y soporte de aplicaciones internas.</li>
+        <li>Integraciones de APIs y tratamiento de datos.</li><li>Prototipado rápido de soluciones de bajo riesgo.</li>
+        <li>Testing, monitorización y documentación operativa.</li><li>Retail/eCommerce: producto, precios, catálogo, búsqueda y experiencia digital.</li>
+        <li>Procesamiento documental, asistentes internos e IA aplicada al negocio.</li>
+      </ul>
+      <p class="quote">“Mi objetivo inicial no sería cambiar sistemas que todavía no conozco. Sería aprender cómo trabaja el equipo, entender su arquitectura y comenzar aportando valor allí donde mis competencias puedan resultar útiles.”</p>
+      </div>
+      <div class="card days"><div class="eyebrow">90 primeros días</div><h3>Conocer → ayudar → aportar</h3>
+        <ul><li><b>Días 1–30:</b> infraestructura, aplicaciones, procesos, proveedores, incidencias, documentación y prioridades.</li>
+        <li><b>Días 31–60:</b> resolver tareas, documentar, participar en incidencias y automatizar pequeños procesos.</li>
+        <li><b>Días 61–90:</b> proponer una mejora concreta, medible y de bajo riesgo.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap footer-inner"><span>© <span data-year></span> Manu Ramos Delgado · Portfolio técnico</span><span>Credibilidad → evidencia → aprendizaje → impacto</span></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
