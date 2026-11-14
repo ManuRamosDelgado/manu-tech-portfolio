@@ -13,3 +13,6 @@ Los proyectos se desarrollan con uso intensivo de IA como copiloto. Las decision
 - **UNDERYARD:** prototipo jugable de estrategia de hormigas en Unity 6, en pruebas y no publicado en tiendas.
 
 La selección pública del portfolio y CV web refleja los proyectos activos. Las referencias anteriores de proyectos abandonados no forman parte del escaparate actual.
+
+## FARO, 14-11-2026
+Landing pública: https://faroia.app/ . Aplicación de acceso privado: https://app.faroia.app/ (Cloudflare Access). Capturas auténticas de entorno de laboratorio CP072, obtenidas en lectura desde PC-C sin cambiar sus fuentes. No implica SaaS comercial terminado.
