@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<defs><linearGradient id="s" x2="0" y2="1"><stop stop-color="#344f33"/><stop offset=".5" stop-color="#6b8a4e"/><stop offset=".51" stop-color="#8d5b39"/><stop offset="1" stop-color="#281914"/></linearGradient></defs><rect width="1000" height="620" fill="url(#s)"/>
+<path d="M0 327Q200 310 420 340T1000 312V620H0Z" fill="#60391f" opacity=".75"/>
+<g fill="none" stroke="#dbb177" stroke-width="15" stroke-linecap="round" opacity=".8"><path d="M190 392Q220 422 340 421L460 468H680"/><path d="M455 468Q485 524 600 548"/></g>
+<g fill="#1b0f0b" stroke="#d9b57a" stroke-width="4"><ellipse cx="410" cy="286" rx="43" ry="33"/><circle cx="360" cy="276" r="22"/><ellipse cx="460" cy="296" rx="53" ry="26"/></g>
+<g stroke="#1b0f0b" stroke-width="7" fill="none" stroke-linecap="round"><path d="M390 294l-38 56m54-55-15 68m42-65 31 60m-48-71 2-62m46 62 43-44"/></g>
+<g font-family="Arial" text-anchor="middle"><text x="500" y="105" fill="#f4e9d4" font-weight="bold" font-size="60" letter-spacing="6">UNDERYARD</text><text x="500" y="145" fill="#d9b57a" font-size="20" letter-spacing="3">CONSTRUYE · EXPANDE · SOBREVIVE</text><text x="500" y="586" fill="#f4e9d4" font-size="17">CONCEPTO GRÁFICO · PROTOTIPO EN DESARROLLO</text></g>
+</svg>
